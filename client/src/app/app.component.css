@@ -1,0 +1,50 @@
+/* Styles for the entire navbar */
+.custom-navbar {
+    background-color: #343a40 !important; /* Dark background */
+    padding: 12px 20px; /* Adds spacing */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds slight shadow */
+}
+
+/* Navbar brand (logo/title) */
+.custom-navbar .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff !important;
+}
+
+/* Nav links */
+.custom-navbar .nav-link {
+    color: #ffffff !important;
+    font-size: 1.1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover effect for links */
+.custom-navbar .nav-link:hover {
+    color: #f8c471 !important; /* Gold on hover */
+}
+
+/* Active link styling */
+.custom-navbar .nav-link.active {
+    font-weight: bold;
+    border-bottom: 2px solid #f8c471; /* Gold underline */
+}
+
+/* Navbar toggler (mobile menu button) */
+.custom-navbar .navbar-toggler {
+    border-color: #f8c471;
+}
+
+/* Spacing for navbar items */
+.custom-navbar .nav-item {
+    margin-right: 15px;
+}
+
+/* Logout button cursor effect */
+.custom-navbar .nav-link[style="cursor:pointer"] {
+    color: #dc3545 !important; /* Red logout */
+}
+
+.custom-navbar .nav-link[style="cursor:pointer"]:hover {
+    color: #ff6b6b !important; /* Lighter red on hover */
+}

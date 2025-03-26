@@ -1,0 +1,23 @@
+/* login.component.css */
+.card {
+    background-color: #f8f9fa; /* Light gray background */
+    border: 1px solid #ced4da; /* Border color */
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.card-header {
+    background-color: #28a745; /* Green header */
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.btn-success {
+    width: 100%;
+    font-size: 16px;
+}
+
+.form-control {
+    border-radius: 5px;
+}

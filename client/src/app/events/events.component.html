@@ -1,0 +1,67 @@
+<div *ngIf="showAdmissionForm"  href="#" class="card rounded-0" style="color: rgb(43, 49, 28);">
+  <div class="card-header">
+    <h3 class="mb-0">Event Registeration Form </h3>
+  </div>
+  <div class="card-body">
+    <form class="form">
+      <div class="form-group">
+        <label for="memberName" > Member Name : (USERNAME) </label>
+        <input type="text" class="form-control rounded-0" [(ngModel)]="data.name" name="memberName" required>
+      </div>
+      <div class="form-group">
+        <label for="collegeid" > College Id  : </label>
+        <input type="text" class="form-control rounded-0" [(ngModel)]="data.collegeid" name="collegeid" required>
+      </div>
+      <div class="form-group">
+        <label for="eventname" > Event Name : </label>
+        <input type="text" class="form-control rounded-0" [(ngModel)]="data.eventname" name="eventname" required>
+      </div>
+      <div class="form-group">
+        <label for="Teachername" > Teacher Name </label>
+        <input type="text" class="form-control rounded-0" [(ngModel)]="data.eventteacher" name="Teachername" required>
+      </div>
+      <!-- <div class="form-group">
+        <label>College ID</label>
+        <input type="text" class="form-control rounded-0" [(ngModel)]="data.collegeid" name="Id" required>
+        <br>
+        <button type="button" (click)="saveCollegeId()" class="btn btn-success float-right" style="bottom: auto;">Save clg id</button>
+      </div> -->
+      <button type="button" class="btn btn-danger" (click)="closeForm()">Close</button>
+      <button type="button" (click)="onadmission()" class="btn btn-success float-right" style="bottom: auto;">Register</button> 
+    </form>
+  </div>
+  <!--/card-block-->
+</div>
+<!-- /form card login -->
+
+
+<div class="row mt-5">
+  <div class="col-md-4 mb-3" *ngFor="let event of events">
+    <div class="card text-center event-card">
+      <div class="card-body">
+        <h5 class="card-title">{{event.name}}</h5>
+        <p class="card-text">{{event.description}}</p>
+        <a  class="btn btn-primary"  (click)="openAdmissionForm(event) " >Take Admission</a>
+      </div>
+      <div class="card-footer text-muted">
+        {{event.Teacher}}
+      </div>
+    </div>
+  </div>
+  </div>
+
+<!-- 
+  <div class="col-md-4 mb-3" *ngFor="let event of events">
+    <div class="card text-center event-card">
+      <div class="card-body">
+        <h5 class="card-title">{{event.name}}</h5>
+        <p class="card-text">{{event.description}}</p>
+        <a href="#" class="btn btn-primary">Take Admission</a>
+      </div>
+      <div class="card-footer text-muted">
+        {{event.Teacher}}
+      </div>
+    </div>
+  </div> -->
+
+  

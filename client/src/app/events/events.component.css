@@ -1,0 +1,71 @@
+/* Styling for the event cards */
+.event-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Hover effect: Lift card and add shadow */
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the card title */
+.event-card .card-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Card body text */
+.event-card .card-text {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* Button styling */
+.event-card .btn-primary {
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Button hover effect */
+.event-card .btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Styling for the card footer */
+.event-card .card-footer {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    color: #555;
+}
+
+/* login.component.css */
+.card {
+    background-color: #f8f9fa; /* Light gray background */
+    border: 1px solid #ced4da; /* Border color */
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.card-header {
+    background-color: #28a745; /* Green header */
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.btn-success {
+    width: 100%;
+    font-size: 16px;
+}
+
+.form-control {
+    border-radius: 5px;
+}
