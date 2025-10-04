@@ -1,0 +1,42 @@
+<!-- <app-login (obj)="msg = $event"></app-login> -->
+<button  class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Events Registered</button>
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Events You Are Registered For</h5>
+
+    <form class="form">
+        
+        <div class="form-group">
+          <label for="uname1" > College ID:</label>
+          <input type="text" class="form-control rounded-0" [(ngModel)]="datasend.collegeid" name="collegeid" required>
+        </div>
+        <!-- <div class="form-group">
+          <label>Password</label>
+          <input type="password" class="form-control rounded-0" [(ngModel)]="datasend.password" name="password" required>
+        </div> -->
+        <button type="button" (click)="tellevent()" class="btn btn-success float-right" style="bottom: auto;">Tell events registered</button>
+      </form>
+
+
+
+
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-12 mb-3" *ngFor="let event of event"> <!-- Use `col-12` for full width -->
+          <ul class="list-group">
+            <li class="list-group-item"><strong>Event Name:</strong> {{ event.eventname }}</li>
+            <li class="list-group-item"><strong>Member Name:</strong> {{ event.name }}</li>
+            <li class="list-group-item"><strong>Teacher:</strong> {{ event.eventteacher }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+</div>

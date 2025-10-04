@@ -1,0 +1,47 @@
+/* Styling for special event cards */
+.special-event-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 1px solid #28a745; /* Green border */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Hover effect: Lift card and add shadow */
+.special-event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the card title */
+.special-event-card .card-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #155724; /* Dark green */
+}
+
+/* Card body text */
+.special-event-card .card-text {
+    color: #444;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* Green button styling */
+.special-event-card .btn-success {
+    background-color: #28a745;
+    border: none;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Button hover effect */
+.special-event-card .btn-success:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Styling for the card footer */
+.special-event-card .card-footer {
+    background-color: #f1f8f4;
+    font-weight: bold;
+    color: #155724;
+}
