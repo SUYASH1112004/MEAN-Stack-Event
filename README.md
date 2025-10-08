@@ -26,26 +26,7 @@ It allows users to **register, log in, browse events, and sign up for special ev
 
 ---
 
-## 🏗️ Project Structure
 
-MEAN-Stack-Event/
-│
-├── client/ # Angular Frontend
-│ ├── src/
-│ │ ├── app/
-│ │ │ ├── components/ # Angular components
-│ │ │ ├── services/ # API integration services
-│ │ │ ├── guards/ # Route guards for auth
-│ │ │ └── models/ # Interfaces & data models
-│ └── ...
-│
-├── server/ # Node.js + Express Backend
-│ ├── routes/ # API routes
-│ ├── models/ # Mongoose schemas
-│ ├── middleware/ # Auth middleware (JWT)
-│ └── server.js # Entry point
-│
-└── README.md
 
 | Layer       | Technology |
 |-------------|------------|
